@@ -1,0 +1,8 @@
+<h1>List of fleas for cat <%= @cat.name %></h1>
+
+<% @cat.fleas.each do |flea| %>
+  <p>
+    Itch factor: <%= flea.itchiness %><br>
+    <%= link_to "Flea detail", cat_flea_path(@cat, flea) %>
+  </p>
+<% end %>

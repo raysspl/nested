@@ -1,0 +1,9 @@
+<h1>List of kitties</h1>
+
+<% @cats.each do |cat| %>
+  <p>
+    ID: <%= link_to cat._id, cat_path(cat) %><br />
+    Name: <%= cat.name %><br />
+    Color: <%= cat.color %>
+  </p>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Kittie <%= @cat._id %></h1>
+
+<p>
+  Name: <%= @cat.name %><br />
+  Color: <%= @cat.color %><br />
+  <%= link_to "Fleas", cat_fleas_path(@cat) %>
+</p>
+
